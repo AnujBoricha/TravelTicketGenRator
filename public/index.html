@@ -180,8 +180,9 @@
         }
 
         try {
+          <!-- Update the fetch URL to the deployed server URL -->
           const response = await fetch(
-            "http://localhost:3000/generate-ticket",
+            "https://travel-ticketgenrator.vercel.app/generate-ticket",
             {
               method: "POST",
               headers: {
